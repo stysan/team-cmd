@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Team CMD</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    clickCounter = 0;
+    function onClick() {
+      clickCounter = clickCounter + 1;
+      document.getElementById('button').innerHTML = 'Кликнул ' + clickCounter + ' раз :D';
+    }
+  </script>
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="bold">Team CMD</a> ·
+    <a href="credits.html">Credits</a> ·
+    <a href="news.html">News</a>
+	</header>
+
+	<main>
+    <h1>Секретная кнопка.</h1>
+    <p>Она буквально ничего не делает.</p><br>
+    <button href="#" rel="noopener" class="button"
+    onclick="onClick()" id="button">Кликнул 0 раз :D</button></p>
+	</main>
+
+</body>
+</html>
